@@ -1,0 +1,366 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height        : 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height      : 100vh;
+  display         : flex;
+  flex-direction  : column;
+  align-items     : center;
+  justify-content : center;
+  font-size       : calc(10px + 2vmin);
+  color           : white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.show {
+  display: block !important;
+}
+
+a:hover,
+a:focus {
+  outline        : 0 none;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin : 0;
+  padding: 0;
+}
+
+ul {
+  margin    : 0;
+  padding   : 0;
+  list-style: none;
+}
+
+p {
+  font-size: 14px !important;
+}
+
+ul li {
+  margin : 0;
+  padding: 0;
+}
+
+.m-t-5 {
+  margin-top: 5px;
+}
+
+.product-page-wrapper .product-popup {
+  text-align: right;
+  padding   : 20px !important;
+}
+
+.card-body {
+  padding: 1.25rem 0;
+}
+
+.product-page-wrapper .product-popup .modal {
+  position        : fixed;
+  top             : 0;
+  right           : 0;
+  left            : auto;
+  z-index         : 1050;
+  max-width       : 700px;
+  background-color: #ffffff;
+  padding-left    : 0 !important;
+  overflow        : auto !important;
+  padding         : 20px !important;
+}
+
+.product-page-wrapper .product-popup .modal .modal-dialog {
+  max-width: initial;
+  margin   : 0;
+  width    : 100%;
+}
+
+.product-page-wrapper .product-popup .modal .modal-dialog .close {
+  opacity: 1;
+}
+
+.product-page-wrapper .product-popup .modal .modal-dialog .close img {
+  width: 25px;
+}
+
+.product-page-wrapper .product-popup .modal .modal-dialog .modal-header .modal-title {
+  font-weight: 500;
+  font-size  : 26px;
+  color      : #333333;
+}
+
+.product-page-wrapper .product-popup .modal .modal-dialog .modal-body {
+  text-align: left;
+  padding   : 0 15px;
+}
+
+.product-page-wrapper .product-popup .modal .modal-dialog .modal-body .card-header {
+  padding         : 0;
+  background-color: inherit;
+  border-bottom   : none;
+}
+
+.product-page-wrapper .product-popup .modal .modal-dialog .modal-body .card {
+  border       : none;
+  border-radius: 0;
+  overflow     : visible;
+}
+
+.product-page-wrapper .product-popup .modal .modal-dialog .modal-body .card .card-header .btn-link {
+  color      : #a2792c;
+  font-size  : 14px;
+  padding    : 0;
+  font-weight: 300;
+}
+
+.product-page-wrapper .product-popup .modal .modal-dialog .modal-body .card .card-header .btn-link:focus,
+.product-page-wrapper .product-popup .modal .modal-dialog .modal-body .card .card-header .btn-link:hover {
+  box-shadow     : none;
+  text-decoration: none;
+}
+
+.product-page-wrapper .product-popup .modal .modal-dialog .modal-body .card .card-header .btn-link i {
+  font-size     : 10px;
+  border        : 1px solid;
+  width         : 15px;
+  height        : 15px;
+  border-radius : 50%;
+  padding       : 1px;
+  vertical-align: middle;
+  margin-right  : 8px;
+}
+
+.product-page-wrapper .product-popup .modal .modal-dialog .modal-body .product-text p {
+  text-align   : justify;
+  font-size    : 13px;
+  padding      : 10px 0;
+  margin-bottom: 0 !important;
+}
+
+.product-page-wrapper .navbar-expand-lg .navbar-nav .dropdown-menu {
+  position     : relative;
+  top          : 0;
+  margin       : 0;
+  border-color : #d0bc95;
+  border-radius: 0;
+  padding      : 0;
+}
+
+.product-page-wrapper .navbar-expand-lg {
+  width  : 100%;
+  padding: 0;
+}
+
+.product-page-wrapper .navbar-expand-lg .navbar-nav {
+  width: 100%;
+}
+
+.product-page-wrapper .navbar-expand-lg .navbar-nav .dropdown {
+  width: 100%;
+}
+
+.product-page-wrapper .navbar-light .navbar-nav .nav-link {
+  background-color: #fff;
+  border          : 1px solid #d0bc95;
+  border-radius   : 7px;
+  padding         : 13px;
+  color           : #999999 !important;
+  font-size       : 16px;
+  font-weight     : 400;
+  display         : flex;
+  align-items     : center;
+  justify-content : space-between;
+}
+
+.product-page-wrapper .navbar-expand-lg .navbar-nav .dropdown .border-bottom {
+  border-bottom: 1px solid #d0bc95 !important;
+}
+
+.product-page-wrapper .navbar-expand-lg .navbar-nav .dropdown .dropdown-item {
+  color          : #4f4f4f;
+  padding        : 10px !important;
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+  text-transform : capitalize;
+}
+
+.product-page-wrapper .bg-yellow {
+  background-color: #fffae8;
+  box-shadow      : none;
+  outline         : none;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: #fffae8;
+}
+
+.modal-header {
+  padding      : 10px 1rem !important;
+  border-bottom: none !important;
+}
+
+.modal-content {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+ul.dropdown-menu.bg-yellow.show {
+  border: none !important;
+}
+
+ul.dropdown-menu.bg-yellow.fontstyle.show {
+  font-size: 12px;
+}
+
+ul.dropdown-menu.bg-yellow.fontstyle.show a {
+  padding: 0 10px !important;
+}
+
+.product-page-wrapper .dropdown i {
+  font-size: 12px;
+  color    : #a2792c;
+}
+
+li.nav-item.dropdown.show i {
+  transform: rotate(90deg);
+}
+
+.form-group label {
+  font-size  : 18px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.form-group .form-control {
+  border : 1px solid #d0bc95;
+  padding: 24px;
+}
+
+.form-group .dropdown .btn-primary {
+  background-color: #fff;
+  border          : 1px solid #d0bc95;
+  border-radius   : 7px;
+  padding         : 13px;
+  color           : #999999 !important;
+  font-size       : 16px;
+  font-weight     : 400;
+  display         : flex;
+  align-items     : center;
+  justify-content : space-between;
+  width           : 100%;
+  text-align      : left;
+}
+
+.form-group .dropdown .dropdown-menu {
+  position     : relative !important;
+  transform    : inherit !important;
+  top          : 0px !important;
+  left         : 0px;
+  will-change  : transform;
+  width        : 100%;
+  margin       : 0;
+  border       : 1px solid #d0bc95;
+  border-radius: 0 0 7px 7px;
+  padding      : 0;
+  height       : 200px;
+  margin-bottom: 10px;
+}
+
+.form-group .dropdown .dropdown-menu .dropdown-item {
+  border-bottom: 1px solid #d0bc95;
+  padding      : 13px;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: none !important;
+  border    : 1px solid #d0bc95 !important;
+}
+
+.textarea label {
+  color        : #646464;
+  font-size    : 16px;
+  margin-bottom: 20px;
+}
+
+.textarea textarea {
+  margin-bottom: 10px;
+}
+
+.modal-footer {
+  border: none !important;
+}
+
+.modal-footer {
+  justify-content: space-between !important;
+}
+
+.continue {
+  background-color: #a2792c !important;
+  border          : none !important;
+  padding         : 7px 14px !important;
+  width           : 140px !important;
+}
+
+.help {
+  background-color: #333 !important;
+  border          : none !important;
+  padding         : 7px 14px !important;
+  width           : 140px !important;
+}
+
+.dropdown.show i {
+  transform: rotate(90deg);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+  background-color: #fffae8 !important;
+  box-shadow      : none !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color           : #fff;
+  text-decoration : none;
+  background-color: #fffae8 !important;
+}
